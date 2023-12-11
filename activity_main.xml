@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/img_3">
+
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="55dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Calculator"
+        android:textColor="@color/black"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.141"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.086" />
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="387dp"
+        android:layout_height="230dp"
+        android:columnCount="4"
+        android:rowCount="5"
+        android:textAlignment="textEnd"
+        app:flow_horizontalGap="10sp"
+        app:flow_verticalGap="10sp"
+
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.842">
+
+        <Button
+            android:id="@+id/b1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_margin="5sp"
+            android:text="1"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/b2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_margin="5sp"
+            android:fontFamily="sans-serif-condensed"
+            android:textStyle="bold"
+            android:text="2" />
+
+        <Button
+            android:id="@+id/b3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:layout_margin="5sp"
+            android:fontFamily="sans-serif-condensed"
+            android:textStyle="bold"
+            android:text="3" />
+
+        <Button
+            android:id="@+id/b4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_margin="5sp"
+            android:fontFamily="sans-serif-condensed"
+            android:textStyle="bold"
+            android:text="4" />
+
+        <Button
+            android:id="@+id/b5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_margin="5sp"
+            android:fontFamily="sans-serif-condensed"
+            android:textStyle="bold"
+            android:text="5" />
+
+        <Button
+            android:id="@+id/b6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:layout_margin="5sp"
+            android:fontFamily="sans-serif-condensed"
+            android:textStyle="bold"
+            android:text="6" />
+
+        <Button
+            android:id="@+id/b7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:layout_margin="5sp"
+            android:fontFamily="sans-serif-condensed"
+            android:textStyle="bold"
+            android:text="7" />
+
+        <Button
+            android:id="@+id/b8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:layout_margin="5sp"
+            android:fontFamily="sans-serif-condensed"
+            android:textStyle="bold"
+            android:text="8" />
+
+        <Button
+            android:id="@+id/b9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:layout_column="2"
+            android:layout_margin="5sp"
+            android:fontFamily="sans-serif-condensed"
+            android:textStyle="bold"
+            android:text="9" />
+
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:layout_margin="5sp"
+            android:onClick="clearField"
+            android:fontFamily="sans-serif-condensed"
+            android:textStyle="bold"
+            android:text="C" />
+
+        <Button
+            android:id="@+id/b0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="3"
+            android:layout_column="1"
+            android:layout_margin="5sp"
+            android:fontFamily="sans-serif-condensed"
+            android:textStyle="bold"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="3"
+            android:layout_margin="5sp"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-condensed"
+            android:textStyle="bold"
+            android:text="+" />
+
+        <Button
+            android:id="@+id/sub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="3"
+            android:layout_margin="5sp"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-condensed"
+            android:textStyle="bold"
+            android:text="-" />
+
+        <Button
+            android:id="@+id/mul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:layout_column="3"
+            android:layout_margin="5sp"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-condensed"
+            android:textStyle="bold"
+            android:text="*" />
+
+        <Button
+            android:id="@+id/div"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="3"
+            android:layout_column="3"
+            android:layout_margin="5sp"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-condensed"
+            android:textStyle="bold"
+            android:text="/" />
+
+        <Button
+            android:id="@+id/equalButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="3"
+            android:layout_column="2"
+            android:layout_margin="5sp"
+            android:onClick="getResult"
+            android:fontFamily="sans-serif-condensed"
+            android:textStyle="bold"
+            android:text="=" />
+
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/finalresult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Result"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:fontFamily="sans-serif-condensed"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.876"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.292" />
+
+    <!--        app:layout_constraintTop_toBottomOf="@+id/textView"-->
+
+
+    <TextView
+        android:id="@+id/numbers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="86dp"
+        android:text="Numbers"
+        android:textAlignment="textEnd"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:fontFamily="sans-serif-condensed"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.86"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/finalresult"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
